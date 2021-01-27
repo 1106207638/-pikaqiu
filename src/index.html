@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>测试</title>
-    
+    <title>皮卡丘</title>
+
 </head>
+
 <body>
     <style id="demo2"></style>
     <div id="demo"></div>
     <div id="buttons">
-        <button id="btnPause">暂停</button>        
+        <button id="btnPause">暂停</button>
         <button id="btnPlay">播放</button>
         <button id="btnSlow">慢速</button>
         <button id="btnNormal">中速</button>
         <button id="btnFast">快速</button>
     </div>
     <style>
-        *{box-sizing: border-box;}
-        *::before,*::after{box-sizing: border-box;}
-        #buttons{
+        * {
+            box-sizing: border-box;
+        }
+
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        #buttons {
             position: fixed;
             right: 0;
             top: 0;
@@ -29,14 +38,17 @@
             display: flex;
             flex-direction: column;
         }
-        #buttons>button{
+
+        #buttons>button {
             margin-bottom: 10px;
             padding: 4px 8px;
         }
-        #demo2{
+
+        #demo2 {
             display: none;
         }
-        #demo{
+
+        #demo {
             position: fixed;
             height: 50vh;
             top: 0;
@@ -45,24 +57,28 @@
             border: 1px solid red;
             overflow-y: auto;
         }
-        #demo::-webkit-scrollbar{
+
+        #demo::-webkit-scrollbar {
             display: none;
         }
-        #output{
+
+        #output {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
             height: 50vh;
-        
+
         }
     </style>
     <div id="output">
         <div class="skin">
             <div class="eye left"></div>
             <div class="eye right"></div>
-           <div class="nose"><div class="yuan"></div></div>
-            
+            <div class="nose">
+                <div class="yuan"></div>
+            </div>
+
             <div class="face left">
             </div>
             <div class="face right">
@@ -78,7 +94,8 @@
                     </div>
                 </div>
             </div>
-    </div>
-    <script src="main.js"></script>
+        </div>
+        <script src="main.js"></script>
 </body>
+
 </html>
